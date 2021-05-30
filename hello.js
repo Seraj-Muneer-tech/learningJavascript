@@ -6,5 +6,11 @@ function myFunc(click){
     else if(click=='show'){
         document.getElementById("p1").style.display="block"
         document.getElementById("heading").style.fontSize="60px"
+        alert(checkHoliday('Sunday'))
     }
+}
+
+
+function checkHoliday(day){
+    return (day==='Sunday'? 'Yes': 'No')
 }
